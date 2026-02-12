@@ -20,15 +20,44 @@
 
   document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
 
-  // --- Nav scroll state ---
+  // --- Nav scroll state + back-to-top ---
   const nav = document.getElementById('nav');
-  let lastScroll = 0;
+  const backToTop = document.getElementById('back-to-top');
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     nav.classList.toggle('scrolled', scrollY > 20);
-    lastScroll = scrollY;
+
+    if (backToTop) {
+      backToTop.classList.toggle('visible', scrollY > 600);
+    }
   }, { passive: true });
+
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // --- Active nav section tracking ---
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a:not(.btn)');
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach((link) => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    },
+    { rootMargin: '-40% 0px -55% 0px' }
+  );
+
+  sections.forEach((section) => sectionObserver.observe(section));
 
   // --- Mobile nav toggle ---
   const toggle = document.getElementById('nav-toggle');
@@ -69,8 +98,8 @@
       // Simulate send — replace with real form handler (Formspree, Netlify, etc.)
       setTimeout(() => {
         btn.textContent = 'Message Sent!';
-        btn.style.background = '#22C55E';
-        btn.style.borderColor = '#22C55E';
+        btn.style.background = 'var(--accent)';
+        btn.style.borderColor = 'var(--accent)';
         form.reset();
 
         setTimeout(() => {

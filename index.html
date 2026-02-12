@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Ridge Ops — Expert Technology Consulting</title>
-  <meta name="description" content="Blue Ridge Ops delivers hands-on technology consulting — operations management, mobile app development, data design, and production support. Based in North Carolina.">
-  <meta name="keywords" content="technology consulting, IT operations, mobile app development, data design, incident management, system monitoring, production support, deployment management">
+  <meta name="description" content="Blue Ridge Ops delivers hands-on technology consulting — mobile app development, data design, AI integration, and production support. We help teams use AI efficiently. Based in North Carolina.">
+  <meta name="keywords" content="technology consulting, AI integration, AI developer training, IT operations, mobile app development, data design, incident management, system monitoring, production support, deployment management">
   <link rel="canonical" href="https://www.blueridgeops.com">
 
   <!-- Open Graph -->
@@ -59,6 +59,7 @@
       "Technology Consulting",
       "Mobile App Development",
       "Data Design & Architecture",
+      "AI Integration & Enablement",
       "Incident & Problem Management",
       "System Monitoring & Health Management",
       "Production Support Staffing",
@@ -69,10 +70,69 @@
   }
   </script>
 
-  <!-- Fonts -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of businesses do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We work with companies of all sizes — from startups that need their first production environment to established businesses modernizing legacy systems. If you have a technology challenge, we can probably help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with clients outside North Carolina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. While we're based in Yadkinville, NC, most of our technology consulting work is done remotely. We've partnered with companies across the Southeast and beyond."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you start on a project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most engagements, we can begin within one to two weeks of signing off on the scope. For urgent production support needs, we can often mobilize within 24-48 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a typical engagement cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the scope. We offer both project-based pricing and monthly retainers. Every engagement starts with a free discovery call where we'll give you a transparent estimate — no surprises."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you work alongside our existing IT team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That's one of our specialties. We embed directly into your workflow — same tools, same standups, same Slack channels. Your team gets extra firepower without the friction of a traditional vendor relationship."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies do you specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We're technology-agnostic and choose the right tool for the job. That said, we have deep experience with cloud platforms (AWS, Azure, GCP), modern web and mobile frameworks, SQL and NoSQL databases, CI/CD pipelines, and monitoring stacks."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts (async to avoid render blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -96,6 +156,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#contact" class="btn btn-sm">Book a Call</a></li>
       </ul>
@@ -111,14 +172,14 @@
           Now accepting new partners
         </span>
         <h1 class="fade-in">Technology That<br>Moves Your <em>Business</em></h1>
-        <p class="hero-sub fade-in">We build apps, design data systems, and keep your production environment bulletproof. Senior-level expertise without the enterprise price tag — just real people solving real problems.</p>
+        <p class="hero-sub fade-in">We build apps, design data systems, and keep your production environment bulletproof — with AI woven in where it actually moves the needle. Senior-level expertise without the enterprise price tag.</p>
         <div class="hero-actions fade-in">
           <a href="#contact" class="btn btn-primary">Start a Conversation</a>
           <a href="#services" class="btn btn-outline">See What We Do</a>
         </div>
         <div class="hero-stats fade-in">
           <div class="stat">
-            <span class="stat-value">7</span>
+            <span class="stat-value">8</span>
             <span class="stat-label">Core Services</span>
           </div>
           <div class="stat-divider"></div>
@@ -162,7 +223,7 @@
     <div class="container">
       <span class="section-label fade-in">What We Do</span>
       <h2 class="section-title fade-in">Build It. Run It.<br>Make It <em>Better.</em></h2>
-      <p class="section-sub fade-in">Whether you need a new mobile app, a smarter data architecture, or someone to keep the lights on at 2 AM — we've got you covered.</p>
+      <p class="section-sub fade-in">Whether you need a new mobile app, a smarter data architecture, an AI strategy that actually works, or someone to keep the lights on at 2 AM — we've got you covered.</p>
 
       <div class="services-grid">
 
@@ -252,6 +313,24 @@
           <span class="service-tag">DevOps</span>
         </div>
 
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/>
+              <path d="M8.24 4.49A4 4 0 0 1 12 2"/>
+              <path d="M14 10.26V22"/>
+              <path d="M6 12h4"/>
+              <path d="M14 12h4"/>
+              <path d="M6 16h4"/>
+              <path d="M14 16h4"/>
+              <circle cx="12" cy="6" r="1"/>
+            </svg>
+          </div>
+          <h3>AI Integration & Enablement</h3>
+          <p>AI is only useful when it's applied to the right problems. We help you integrate AI tools into real workflows — and train your developers to use them efficiently, so the productivity gains stick.</p>
+          <span class="service-tag">AI</span>
+        </div>
+
         <div class="service-card service-card-cta fade-in">
           <div class="service-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -292,6 +371,10 @@
             </li>
             <li>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span><strong>AI-forward</strong> — we use AI where it makes a real difference, and teach your team to do the same</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
               <span><strong>Scale on your terms</strong> — ramp up for launches, dial back when it's steady</span>
             </li>
           </ul>
@@ -309,6 +392,73 @@
             <a href="#contact" class="btn btn-primary btn-block">Grab a Time Slot</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <span class="section-label fade-in">How We Work</span>
+      <h2 class="section-title fade-in">Simple Process,<br>Serious <em>Results</em></h2>
+      <p class="section-sub fade-in">No red tape, no mystery. Here's exactly how a typical technology consulting engagement works with Blue Ridge Ops.</p>
+
+      <div class="process-grid">
+        <div class="process-step fade-in">
+          <div class="process-number">1</div>
+          <h3>Discovery</h3>
+          <p>We start with a free call to understand your business, your tech stack, and the challenges keeping you up at night. No commitment — just an honest conversation.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">2</div>
+          <h3>Strategy</h3>
+          <p>We put together a clear plan of attack — scope, timeline, and costs laid out in plain English. You'll know exactly what we're doing, why, and what it'll take.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">3</div>
+          <h3>Execution</h3>
+          <p>We get to work. Whether it's building an app, designing a database, or stabilizing your production environment — you'll see progress weekly, not quarterly.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">4</div>
+          <h3>Support</h3>
+          <p>We don't disappear after launch. Ongoing monitoring, maintenance, and optimization keep your systems running strong — and we're a phone call away when you need us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <span class="section-label fade-in">Common Questions</span>
+      <h2 class="section-title fade-in">Frequently <em>Asked</em></h2>
+
+      <div class="faq-grid">
+        <details class="faq-item fade-in">
+          <summary>What types of businesses do you work with?</summary>
+          <p>We work with companies of all sizes — from startups that need their first production environment to established businesses modernizing legacy systems. If you have a technology challenge, we can probably help.</p>
+        </details>
+        <details class="faq-item fade-in">
+          <summary>Do you work with clients outside North Carolina?</summary>
+          <p>Absolutely. While we're based in Yadkinville, NC, most of our technology consulting work is done remotely. We've partnered with companies across the Southeast and beyond.</p>
+        </details>
+        <details class="faq-item fade-in">
+          <summary>How quickly can you start on a project?</summary>
+          <p>For most engagements, we can begin within one to two weeks of signing off on the scope. For urgent production support needs, we can often mobilize within 24-48 hours.</p>
+        </details>
+        <details class="faq-item fade-in">
+          <summary>What does a typical engagement cost?</summary>
+          <p>It depends on the scope. We offer both project-based pricing and monthly retainers. Every engagement starts with a free discovery call where we'll give you a transparent estimate — no surprises.</p>
+        </details>
+        <details class="faq-item fade-in">
+          <summary>Can you work alongside our existing IT team?</summary>
+          <p>That's one of our specialties. We embed directly into your workflow — same tools, same standups, same Slack channels. Your team gets extra firepower without the friction of a traditional vendor relationship.</p>
+        </details>
+        <details class="faq-item fade-in">
+          <summary>What technologies do you specialize in?</summary>
+          <p>We're technology-agnostic and choose the right tool for the job. That said, we have deep experience with cloud platforms (AWS, Azure, GCP), modern web and mobile frameworks, SQL and NoSQL databases, CI/CD pipelines, and monitoring stacks.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -349,11 +499,11 @@
         <form class="contact-form fade-in" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+            <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@company.com">
+            <input type="email" id="email" name="email" required placeholder="you@company.com" autocomplete="email">
           </div>
           <div class="form-group">
             <label for="message">Message</label>
@@ -376,11 +526,29 @@
             <span class="logo-text">Blue Ridge Ops</span>
           </a>
           <p class="footer-tagline">Technology consulting from Yadkinville, NC. Apps, data, operations — done right.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/blueridgeops" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/blue-ridge-ops" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="footer-links">
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <div class="footer-nav">
+          <div class="footer-links">
+            <h5>Navigation</h5>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-contact">
+            <h5>Contact</h5>
+            <a href="mailto:peter@blueridgeops.com">peter@blueridgeops.com</a>
+            <a href="tel:+13369099421">(336) 909-9421</a>
+            <span>Yadkinville, NC</span>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -388,6 +556,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
