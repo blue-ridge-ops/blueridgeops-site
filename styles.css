@@ -864,11 +864,40 @@ img {
   min-height: 120px;
 }
 
+.form-honey {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
 .form-note {
   font-size: 0.825rem;
   color: var(--text-light);
   text-align: center;
   margin-top: 1rem;
+}
+
+.form-status {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.form-status.success {
+  color: #059669;
+  background: rgba(5, 150, 105, 0.08);
+}
+
+.form-status.error {
+  color: #DC2626;
+  background: rgba(220, 38, 38, 0.08);
 }
 
 /* --- Footer --- */

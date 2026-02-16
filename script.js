@@ -85,30 +85,71 @@
   }
 
   // --- Contact form ---
+  const CONTACT_FUNCTION_URL = 'https://submitcontactform-53cknr5tjq-ue.a.run.app';
+
   const form = document.getElementById('contact-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const btn = form.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
+
+      // Remove any previous status message
+      const oldStatus = form.querySelector('.form-status');
+      if (oldStatus) oldStatus.remove();
+
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      // Simulate send — replace with real form handler (Formspree, Netlify, etc.)
-      setTimeout(() => {
-        btn.textContent = 'Message Sent!';
-        btn.style.background = 'var(--accent)';
-        btn.style.borderColor = 'var(--accent)';
-        form.reset();
+      const payload = {
+        name: form.querySelector('#name').value,
+        email: form.querySelector('#email').value,
+        message: form.querySelector('#message').value,
+        _honey: form.querySelector('#_honey').value,
+      };
 
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.style.borderColor = '';
-          btn.disabled = false;
-        }, 3000);
-      }, 1000);
+      try {
+        const res = await fetch(CONTACT_FUNCTION_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+          btn.textContent = 'Message Sent!';
+          btn.style.background = 'var(--accent)';
+          btn.style.borderColor = 'var(--accent)';
+          form.reset();
+
+          const msg = document.createElement('p');
+          msg.className = 'form-status success';
+          msg.textContent = "Thanks! We'll be in touch within one business day.";
+          btn.insertAdjacentElement('afterend', msg);
+
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.disabled = false;
+            msg.remove();
+          }, 5000);
+        } else {
+          throw new Error(data.error || 'Something went wrong.');
+        }
+      } catch (err) {
+        btn.textContent = originalText;
+        btn.disabled = false;
+
+        const msg = document.createElement('p');
+        msg.className = 'form-status error';
+        msg.textContent = err.message || 'Something went wrong. Please try again.';
+        btn.insertAdjacentElement('afterend', msg);
+
+        setTimeout(() => msg.remove(), 5000);
+      }
     });
   }
 })();
