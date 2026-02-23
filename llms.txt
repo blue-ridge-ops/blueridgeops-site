@@ -1,0 +1,37 @@
+# Blue Ridge Ops
+> Technology consulting from Hamptonville, North Carolina
+
+## About
+Blue Ridge Ops is a technology consulting firm based in Hamptonville, NC. We build apps, design data systems, integrate AI, and keep production environments running — with senior-level expertise and no enterprise overhead. Founded by Peter, we work directly with clients across North Carolina and the United States.
+
+Website: https://www.blueridgeops.com
+Email: peter@blueridgeops.com
+Phone: (336) 909-9421
+Location: Hamptonville, NC
+
+## Services
+
+- **Mobile App Development**: Native and cross-platform mobile applications from concept to App Store launch, including architecture, development, and deployment.
+- **Data Design & Architecture**: Database schemas, data pipelines, and reporting structures that turn raw information into actionable business insight.
+- **Incident & Problem Management**: Rapid incident triage, root cause analysis, and permanent remediation for production issues.
+- **System Monitoring & Health**: Proactive monitoring with alerting, performance baselines, and health dashboards that detect problems before customers do.
+- **Production Support Staffing**: Experienced engineers embedded directly into client teams on the same tools, workflows, and communication channels.
+- **Application Maintenance**: Ongoing bug fixes, performance tuning, and feature enhancements at the code level to keep production software running at its best.
+- **Deployment & Release Management**: CI/CD pipeline design and management for reliable, on-time releases with rollback capabilities.
+- **AI Integration & Enablement**: AI tool integration into real business workflows plus developer training to ensure lasting productivity gains.
+- **Agentic Systems**: Design, build, and deployment of autonomous AI agent systems that handle multi-step tasks with tools and human oversight.
+
+## Key Facts
+- Based in Hamptonville, North Carolina
+- Serves clients across the United States (remote-first)
+- Senior engineers only — no junior hand-offs
+- Free discovery call to start every engagement
+- Project-based pricing and monthly retainers available
+- Can mobilize within 24–48 hours for urgent production support
+- Technology-agnostic: AWS, Azure, GCP, modern web/mobile frameworks, SQL/NoSQL, CI/CD
+
+## How We Work
+1. Discovery — Free call to understand your business and challenges
+2. Strategy — Clear plan with scope, timeline, and costs in plain English
+3. Execution — Weekly visible progress on builds, data, or operations
+4. Support — Ongoing monitoring, maintenance, and optimization after launch

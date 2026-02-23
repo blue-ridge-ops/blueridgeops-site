@@ -40,6 +40,7 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://www.blueridgeops.com/#organization",
     "name": "Blue Ridge Ops",
     "description": "Hands-on technology consulting — operations management, mobile app development, data design, and production support based in Hamptonville, North Carolina.",
     "url": "https://www.blueridgeops.com",
@@ -135,6 +136,214 @@
   }
   </script>
 
+  <!-- WebSite schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.blueridgeops.com/#website",
+    "name": "Blue Ridge Ops",
+    "url": "https://www.blueridgeops.com",
+    "description": "Blue Ridge Ops is a technology consulting firm based in Hamptonville, North Carolina, offering mobile app development, data design, AI integration, and production operations support.",
+    "publisher": {
+      "@id": "https://www.blueridgeops.com/#organization"
+    }
+  }
+  </script>
+
+  <!-- WebPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.blueridgeops.com/#webpage",
+    "name": "Blue Ridge Ops — Expert Technology Consulting",
+    "description": "Hands-on technology consulting — mobile app development, data design, AI integration, and production support. Based in Hamptonville, NC.",
+    "url": "https://www.blueridgeops.com",
+    "datePublished": "2026-02-01",
+    "dateModified": "2026-02-23",
+    "isPartOf": {
+      "@id": "https://www.blueridgeops.com/#website"
+    },
+    "about": {
+      "@id": "https://www.blueridgeops.com/#organization"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero h1", ".hero-sub", ".section-title", ".section-sub"]
+    }
+  }
+  </script>
+
+  <!-- Person schema (founder — E-E-A-T signal) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.blueridgeops.com/#founder",
+    "name": "Peter",
+    "jobTitle": "Founder",
+    "worksFor": {
+      "@id": "https://www.blueridgeops.com/#organization"
+    },
+    "email": "peter@blueridgeops.com",
+    "telephone": "+1-336-909-9421",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hamptonville",
+      "addressRegion": "NC",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <!-- Service ItemList schema (9 services) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Blue Ridge Ops Services",
+    "numberOfItems": 9,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Mobile App Development",
+          "description": "Blue Ridge Ops builds native and cross-platform mobile applications from concept to App Store launch. The team handles architecture, development, and deployment so clients can focus on business growth.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "Build"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Data Design & Architecture",
+          "description": "Blue Ridge Ops designs database schemas, data pipelines, and reporting structures that transform raw information into clear, actionable business insight.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "Data"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Incident & Problem Management",
+          "description": "Blue Ridge Ops provides rapid incident triage, root cause analysis, and permanent remediation for production issues — prioritizing lasting fixes over temporary workarounds.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "Reactive Support"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Service",
+          "name": "System Monitoring & Health",
+          "description": "Blue Ridge Ops implements proactive system monitoring with alerting, performance baselines, and health dashboards that detect problems before they affect customers.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "Proactive Support"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Service",
+          "name": "Production Support Staffing",
+          "description": "Blue Ridge Ops embeds experienced engineers directly into client teams — working on the same tools, workflows, and communication channels — to provide additional capacity without traditional vendor friction.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "Staffing"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Service",
+          "name": "Application Maintenance",
+          "description": "Blue Ridge Ops handles ongoing application maintenance including bug fixes, performance tuning, and feature enhancements at the code level to keep production software running at its best.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "Code-Level Support"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Service",
+          "name": "Deployment & Release Management",
+          "description": "Blue Ridge Ops builds and manages CI/CD pipelines and deployment processes to ensure reliable, on-time releases with comprehensive rollback capabilities.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "DevOps"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "Service",
+          "name": "AI Integration & Enablement",
+          "description": "Blue Ridge Ops helps businesses integrate AI tools into real workflows and trains development teams to use them efficiently, ensuring lasting productivity gains from artificial intelligence.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "AI"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "Service",
+          "name": "Agentic Systems",
+          "description": "Blue Ridge Ops designs, builds, and deploys autonomous AI agent systems that handle multi-step tasks, use tools, and operate reliably with human oversight — going beyond chatbots to real workflow automation.",
+          "provider": { "@id": "https://www.blueridgeops.com/#organization" },
+          "areaServed": [
+            { "@type": "State", "name": "North Carolina" },
+            { "@type": "Country", "name": "United States" }
+          ],
+          "serviceType": "AI"
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Fonts (async to avoid render blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -196,7 +405,7 @@
         </div>
         <div class="hero-stats fade-in">
           <div class="stat">
-            <span class="stat-value">8</span>
+            <span class="stat-value">9</span>
             <span class="stat-label">Core Services</span>
           </div>
           <div class="stat-divider"></div>
