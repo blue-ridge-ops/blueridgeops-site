@@ -35,3 +35,8 @@ Location: Hamptonville, NC
 2. Strategy — Clear plan with scope, timeline, and costs in plain English
 3. Execution — Weekly visible progress on builds, data, or operations
 4. Support — Ongoing monitoring, maintenance, and optimization after launch
+
+## Blog
+Blue Ridge Ops publishes articles on technology consulting, AI strategy, mobile app development, and production operations. Topics include practical guidance for businesses evaluating technology decisions, choosing AI tools, and managing production environments.
+
+- [What Is Technology Consulting? A Plain-English Guide](https://www.blueridgeops.com/blog/what-is-technology-consulting.html) — Explains what technology consulting involves, who needs it, and what to look for in a consulting partner.

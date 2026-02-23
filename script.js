@@ -57,7 +57,10 @@
     { rootMargin: '-40% 0px -55% 0px' }
   );
 
-  sections.forEach((section) => sectionObserver.observe(section));
+  // Only track active sections on the homepage (hash-based nav links)
+  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    sections.forEach((section) => sectionObserver.observe(section));
+  }
 
   // --- Mobile nav toggle ---
   const toggle = document.getElementById('nav-toggle');
