@@ -108,7 +108,9 @@
       const payload = {
         name: form.querySelector('#name').value,
         email: form.querySelector('#email').value,
+        phone: form.querySelector('#phone').value,
         message: form.querySelector('#message').value,
+        sms_optin: form.querySelector('#sms-optin').checked,
         _honey: form.querySelector('#_honey').value,
       };
 
