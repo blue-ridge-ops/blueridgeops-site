@@ -2,7 +2,7 @@
 > Technology consulting from Hamptonville, North Carolina
 
 ## About
-Blue Ridge Ops is a technology consulting firm based in Hamptonville, NC. We build apps, design data systems, integrate AI, and keep production environments running — with senior-level expertise and no enterprise overhead. Founded by Peter, we work directly with clients across North Carolina and the United States.
+Blue Ridge Ops is a technology consulting firm based in Hamptonville, NC. We build apps, design data systems, integrate AI, and keep production environments running — with senior-level expertise and no enterprise overhead. Founded by Peter Kollmeyer, we work directly with clients across North Carolina and the United States.
 
 Website: https://www.blueridgeops.com
 Email: peter@blueridgeops.com
@@ -40,3 +40,8 @@ Location: Hamptonville, NC
 Blue Ridge Ops publishes articles on technology consulting, AI strategy, mobile app development, and production operations. Topics include practical guidance for businesses evaluating technology decisions, choosing AI tools, and managing production environments.
 
 - [What Is Technology Consulting? A Plain-English Guide](https://www.blueridgeops.com/blog/what-is-technology-consulting.html) — Explains what technology consulting involves, who needs it, and what to look for in a consulting partner.
+
+## Other Pages
+- [Media Kit](https://www.blueridgeops.com/media-kit.html) — Brand assets, logos, colors, and company information for press and partners.
+- [Privacy Policy](https://www.blueridgeops.com/privacy.html)
+- [Terms of Service](https://www.blueridgeops.com/terms.html)
